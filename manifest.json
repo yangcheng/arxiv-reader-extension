@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "arXiv Paper Reader",
+    "version": "1.0",
+    "description": "Allows users to customize font families on arXiv HTML pages.",
+    "permissions": [
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://arxiv.org/html/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "options_page": "options.html",
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }
