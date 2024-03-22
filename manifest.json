@@ -12,10 +12,10 @@
   },
   "options_page": "options.html",
   "permissions": ["storage", "activeTab"],
-  "host_permissions": ["https://arxiv.org/*"],
+  "host_permissions": ["https://arxiv.org/html/*"],
   "content_scripts": [
     {
-      "matches": ["https://arxiv.org/*"],
+      "matches": ["https://arxiv.org/html/*"],
       "js": ["content.js"]
     }
   ]
